@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import RouteBoundary from "./routes/RouteBoundary";
+import { routes } from "./routes/route";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Routes>
+        {routes &&
+          routes.map((route) => (
+            <Route key={route.path} path={route.path} element={route.element} />
+          ))}
+        <Route path="*" element={<RouteBoundary />} />
+      </Routes>
     </div>
   );
 }

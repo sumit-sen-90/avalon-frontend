@@ -1,0 +1,16 @@
+.error_page {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .error_page h1 {
+   
+    color: #076df9;
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .error_page p {
+    font-size: 33px;
+    font-weight: bold;
+  }

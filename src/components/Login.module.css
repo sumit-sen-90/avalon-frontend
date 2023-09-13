@@ -1,0 +1,18 @@
+.login_main_div {
+  background-color: #1e2329;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #181c21;
+  padding: 1rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+.custom_btn_color {
+  color: #1e2329;
+  font-size: larger;
+}

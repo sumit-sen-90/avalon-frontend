@@ -1,0 +1,14 @@
+.custom_btn_color {
+  color: #124c93;
+  font-size: larger;
+}
+.highOpacity{
+    opacity: 1;
+}
+.lowOpacity{
+    opacity: 0.5;
+}
+.logo{
+    max-width: 16rem;
+    max-height: 16rem;
+}
